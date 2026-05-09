@@ -42,18 +42,18 @@ function MenuCard({ item }: { item: MenuItem }) {
       <div className="absolute inset-0 z-0 overflow-hidden bg-primary/5">
         {item.image_url ? (
           <>
-            <img 
-              src={item.image_url} 
-              alt={item.name} 
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-              loading="lazy" 
+            <img
+              src={item.image_url}
+              alt={item.name}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              loading="lazy"
             />
             {/* Dark gradient overlay for readability */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           </>
         ) : (
           <div className="absolute inset-0 bg-paper flex items-center justify-center opacity-40 group-hover:opacity-100 transition-all duration-500">
-             <span className="text-7xl">
+            <span className="text-7xl">
               {CATEGORY_EMOJI[item.category] || '☕'}
             </span>
           </div>
@@ -74,7 +74,7 @@ function MenuCard({ item }: { item: MenuItem }) {
             Signature Dish
           </div>
         )}
-        
+
         <div>
           <h3 className={`font-display text-2xl md:text-3xl font-bold leading-tight group-hover:italic transition-all line-clamp-1 ${item.image_url ? 'text-white' : 'text-foreground'}`}>
             {item.name}
@@ -90,7 +90,7 @@ function MenuCard({ item }: { item: MenuItem }) {
           <p className={`font-display text-2xl font-black tabular-nums ${item.image_url ? 'text-accent' : 'text-accent'}`}>
             ₹{item.price}
           </p>
-          
+
           {cartItem ? (
             <div className={`flex items-center gap-3 px-3 py-2 ${item.image_url ? 'bg-white/10 backdrop-blur-md' : 'bg-foreground/5'}`}>
               <button
