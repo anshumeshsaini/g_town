@@ -52,7 +52,7 @@ export default function Index() {
                 <span className="w-1.5 h-1.5 rounded-full bg-success animate-pulse" />
                 Open · 8 AM – 11 PM
               </span>
-              <span className="hidden sm:inline">No 24 · Indiranagar, BLR</span>
+              <span className="hidden sm:inline">GTOWN CAFE GATE NO.1 GLA UNIVERSITY Mathura</span>
             </div>
 
             <div className="my-12 lg:my-0">
@@ -164,48 +164,7 @@ export default function Index() {
       </section>
 
       {/* ============ SIGNATURES — list, not cards ============ */}
-      <section className="bg-primary text-primary-foreground px-6 sm:px-10 lg:px-16 py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-end justify-between flex-wrap gap-6 mb-12">
-            <div>
-              <p className="font-body text-xs uppercase tracking-[0.3em] text-accent mb-3">
-                §02 — On the menu
-              </p>
-              <h2 className="font-display text-5xl lg:text-6xl font-bold leading-[0.95]">
-                Things people <br />
-                keep coming back for.
-              </h2>
-            </div>
-            <Link
-              to="/menu"
-              className="font-body text-sm uppercase tracking-widest border-b border-accent pb-1 hover:text-accent transition-colors"
-            >
-              See the full menu →
-            </Link>
-          </div>
-
-          <ul className="divide-y divide-primary-foreground/15">
-            {SIGNATURES.map((it) => (
-              <li
-                key={it.n}
-                className="grid grid-cols-12 gap-4 py-8 items-center group hover:bg-primary-foreground/5 -mx-4 px-4 transition-colors"
-              >
-                <span className="col-span-2 sm:col-span-1 font-accent text-2xl text-accent">{it.n}</span>
-                <div className="col-span-7 sm:col-span-7">
-                  <h3 className="font-display text-2xl sm:text-3xl font-semibold group-hover:italic transition-all">
-                    {it.name}
-                  </h3>
-                  <p className="font-body text-sm text-primary-foreground/60 mt-1">{it.notes}</p>
-                </div>
-                <span className="col-span-3 sm:col-span-4 text-right font-display text-2xl sm:text-3xl font-bold text-accent tabular-nums">
-                  ₹{it.price}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
+      
       {/* ============ AMBIANCE — image + asymmetric text ============ */}
       <section className="px-6 sm:px-10 lg:px-16 py-24 lg:py-32 max-w-7xl mx-auto">
         <div className="grid grid-cols-12 gap-8 items-center">
@@ -352,8 +311,8 @@ export default function Index() {
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">Find us</p>
-            <p className="text-foreground">No 24, 12th Main</p>
-            <p className="text-muted-foreground">Indiranagar, Bangalore</p>
+            <p className="text-foreground">GATE NO.1, GLA UNIVERSITY</p>
+            <p className="text-muted-foreground">GTOWN CAFE</p>
           </div>
           <div>
             <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">Hours</p>
@@ -363,7 +322,7 @@ export default function Index() {
           <div>
             <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground mb-2">Say hi</p>
             <a href="https://instagram.com" className="inline-flex items-center gap-2 text-foreground hover:text-accent">
-              <Instagram size={14} /> @gtown.cafe
+              <Instagram size={14} /> @gtown_cafe
             </a>
           </div>
         </div>

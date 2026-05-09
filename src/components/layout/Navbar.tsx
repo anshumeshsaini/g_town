@@ -27,7 +27,7 @@ export default function Navbar() {
   const links = [
     { to: '/', label: 'Home' },
     { to: '/menu', label: 'Menu' },
-    { to: '/admin', label: 'Admin' },
+
   ];
 
   return (
